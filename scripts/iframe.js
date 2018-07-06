@@ -30,8 +30,8 @@ function addIframe() {
   function onIframeLoad() {
 
     fetchHtml()
-      .then(fetchCss).catch()
-      .then(fetchJavascript).catch()
+      .then(fetchCss).catch(fetchCss)
+      .then(fetchJavascript).catch(fetchJavascript)
       .then(postMessage)
 
     function fetchHtml() {
