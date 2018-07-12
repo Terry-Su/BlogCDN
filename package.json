@@ -1,0 +1,23 @@
+{
+  "name": "BlogCDN",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "scripts": {
+    "start": "node server"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/Terry-Su/BlogCDN.git"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/Terry-Su/BlogCDN/issues"
+  },
+  "homepage": "https://github.com/Terry-Su/BlogCDN#readme",
+  "devDependencies": {
+    "browser-sync": "^2.24.5"
+  }
+}

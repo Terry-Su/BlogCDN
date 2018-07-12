@@ -1,0 +1,11 @@
+/* Key */
+.child { margin-top: 100px; }
+
+
+
+/* Other */
+body { margin: 0; padding: 0; }
+
+.parent { width: 100px; height: 100px; background-color: blue; }
+
+.child { background-color: orange;  }
