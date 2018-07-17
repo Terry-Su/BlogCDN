@@ -14,8 +14,11 @@
 
 /* Other */
 html,body { width: 100%; height: 100%; padding: 0; margin: 0; }
+
 div { width: 100px; height: 100px; }
+
 .box1 { background-color: blue; }
+
 .box2 { background-color: grey; }
 
 
