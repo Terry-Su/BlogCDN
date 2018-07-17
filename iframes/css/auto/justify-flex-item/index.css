@@ -1,0 +1,11 @@
+/* Key */
+.zoo { margin-left: auto; }
+
+
+/* Other */
+html, body { width: 100%; height: 100%; padding: 0; margin: 0;  }
+.container { display: flex;}
+.container>div { width: 100px; height: 100px; }
+.foo { background: blue; }
+.bar { background: orange; }
+.zoo { background: purple; }

@@ -1,11 +1,21 @@
-/* Key */
-.child { margin-top: 100px; }
+/* 
+ * The distance from child's top to parent's top
+ * is 0px instead of 100px, and the distance 
+ * from parent's top to browser's top is 
+ * 100px instead of 200px
+ */
 
+/* Key */
+.parent {
+  margin-top: 100px;
+}
+.child {
+  margin-top: 100px;
+}
 
 
 /* Other */
-body { margin: 0; padding: 0; }
-
-.parent { width: 100px; height: 100px; background-color: blue; }
-
-.child { background-color: orange;  }
+html,body { width: 100%; height: 100%; padding: 0; margin: 0; }
+.parent { background-color: blue; }
+div { width: 100px; height: 100px; }
+.child { color: orange; background-color: orange;}

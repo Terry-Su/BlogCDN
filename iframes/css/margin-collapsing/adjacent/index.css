@@ -1,0 +1,21 @@
+/* 
+ * The distance between two boxes is 100px
+ * instead of 200px
+ */
+
+/* Key */
+.box1 {
+  margin-bottom: 100px;
+}
+.box2 {
+  margin-top: 100px;
+}
+
+
+/* Other */
+html,body { width: 100%; height: 100%; padding: 0; margin: 0; }
+div { width: 100px; height: 100px; }
+.box1 { background-color: blue; }
+.box2 { background-color: grey; }
+
+

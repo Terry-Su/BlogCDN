@@ -1,0 +1,7 @@
+/* Key */
+div { margin: 0 auto; }
+
+
+/* Other */
+body { width: 100%; height: 100%; margin:0; padding:0; }
+div { width: 100px; height: 100px; background: blue; }
