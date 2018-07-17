@@ -6,7 +6,7 @@ const JAVASCRIPT_URL = './index.js'
 
 const CODE_VIEWER_IFRAME_URL = 'https://terry-su.github.io/CodeViewer/src/index.html'
 
-const STYLE_TEXT = `html,body{ width:100%;height:100%;margin:0;padding:0 } iframe{width:100%;height:100%;}`
+const STYLE_TEXT = `html,body{ width:100%;height:300px;margin:0;padding:0; overflow: hidden; } iframe{width:100%;height:100%;border:none;}`
 
 let tsHtml,
   tsCss,
@@ -24,6 +24,7 @@ function main() {
 function addIframe() {
   const iframe = document.createElement('iframe')
   iframe.src = CODE_VIEWER_IFRAME_URL
+  iframe.setAttribute( "frameBorder", 0 )
   iframe.onload = onIframeLoad
   document.body.appendChild(iframe)
 
