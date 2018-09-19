@@ -1,4 +1,5 @@
 const browserSync = require( 'browser-sync' )
+const { resolve } = require( 'path' )
 
 const bs = browserSync.create()
 const serverPath = __dirname
