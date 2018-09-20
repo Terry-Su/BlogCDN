@@ -1,7 +1,7 @@
 add()
 add()
 
-const throttled = _.throttle( scrolling, 200 )
+const throttled = _.throttle( scrolling, 10 )
 window.addEventListener( 'scroll', throttled )
 
 function scrolling() {
