@@ -10,7 +10,7 @@ function scrolling() {
   const { bottom }  = last.getBoundingClientRect()
   const { height }  = document.body.getBoundingClientRect()
 
-  const shouldAdd = height - bottom >= 0
+  const shouldAdd = bottom <= height + 20
 
   shouldAdd && add()
 
