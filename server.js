@@ -10,7 +10,7 @@ const serverconfig = {
 		directory: true,
 	},
 	files: [
-		`${serverPath}/**`
+		`${serverPath}/**/*`
 	],
 	// port: 8600,
 	open: false,
