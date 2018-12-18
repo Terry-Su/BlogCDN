@@ -1,0 +1,59 @@
+<script src="https://cdnjs.cloudflare.com/ajax/libs/react/16.6.3/umd/react.production.min.js"></script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/react-dom/16.6.3/umd/react-dom.production.min.js"></script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/react-redux/6.0.0/react-redux.min.js"></script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/react-redux/6.0.0/react-redux.min.js"></script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/redux/4.0.1/redux.min.js"></script>
+<script src="https://unpkg.com/babel-standalone@6/babel.js"></script>
+
+
+<div id="app"></div>
+
+<script type="text/babel">
+  // action
+  const increment = () => ({ type: "INCREMENT" });
+
+  // reducer
+  function count(state = 0, action) {
+    switch (action.type) {
+      case "INCREMENT":
+        return state + 1;
+      default:
+        return state;
+    }
+  }
+
+  // redux
+  const store = Redux.createStore(count);
+
+  // react-redux
+  const { Provider, connect } = ReactRedux;
+  const mapStateToProps = state => ({ count: state });
+  const mapDispatchToProps = dispatch => ({
+    increment: () => dispatch(increment())
+  });
+  const App = connect(
+    mapStateToProps,
+    mapDispatchToProps
+  )(
+    class extends React.Component {
+      onClick = () => {
+        this.props.increment();
+      };
+      render() {
+        return (
+          <div>
+            <p>Count: {this.props.count}</p>
+            <button onClick={this.onClick}>+</button>
+          </div>
+        );
+      }
+    }
+  );
+
+  ReactDOM.render(
+    <Provider store={store}>
+      <App />
+    </Provider>,
+    document.getElementById("app")
+  );
+</script>
