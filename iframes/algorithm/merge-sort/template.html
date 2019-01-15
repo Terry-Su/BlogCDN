@@ -21,7 +21,7 @@ class App extends React.Component {
 
   asyncUpdate( arr, left, right, middle ) {
     const tmp = [ ...arr ]
-    this.time = this.time + 1500
+    this.time = this.time + 500
     const currentTime = this.time
     setTimeout(() => {
       this.setState( { 
