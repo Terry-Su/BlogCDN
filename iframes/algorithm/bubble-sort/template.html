@@ -56,10 +56,13 @@ class App extends React.Component {
       return 'red'
     }
     if ( this.state.currentJ != null &&this.state.currentJ + 1 === index ) {
-      return 'deepSkyBlue'
+      return 'orange'
     }
     if ( this.state.currentI === index ) {
       return 'purple'
+    }
+    if ( this.state.currentI != null && index > this.state.currentI ) {
+      return 'deepSkyBlue'
     }
     return 'blue'
   }
