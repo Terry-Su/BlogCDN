@@ -1,0 +1,23 @@
+.container {
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+
+  width: 100%;
+  height: 100px;
+  background: deepskyblue;
+  color: white;
+}
+
+.container .title {
+  font-size: 22px;
+  margin-right: 50px;
+}
+
+html,
+body {
+  width: 100%;
+  height: 100%;
+  margin: 0;
+  padding: 0;
+}

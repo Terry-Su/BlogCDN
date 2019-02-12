@@ -6,11 +6,11 @@ const serverPath = __dirname
 
 const serverconfig = {
 	server: {
-		baseDir: serverPath,
+		baseDir  : serverPath,
 		directory: true,
 	},
 	files: [
-		`${serverPath}/**/*`
+		`${serverPath}/**/*`,
 	],
 	// port: 8600,
 	open: false,
