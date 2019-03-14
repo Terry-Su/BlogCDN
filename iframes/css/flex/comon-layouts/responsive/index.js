@@ -9,7 +9,6 @@ const animate  = function() {
   count += 0.3
 
   el.style.width = count + '%'
-  console.log( 123 )
   window.requestAnimationFrame( animate )
 }
 
