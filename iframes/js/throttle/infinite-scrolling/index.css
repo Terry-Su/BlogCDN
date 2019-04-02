@@ -11,9 +11,9 @@ html, body { width: 100%; height: 100%; padding: 0; margin: 0; }
   text-align: center;
 }
 
-.box1 { border-color: red;   }
-.box2 { border-color: red;   }
-.box3 { border-color: red;   }
-.box4 { border-color: blue;   }
-.box5 { border-color: blue;   }
-.box6 { border-color: blue;   }
+.box1 { border-color: lightcoral;   }
+.box2 { border-color: lightcoral;   }
+.box3 { border-color: lightcoral;   }
+.box4 { border-color: lightseagreen;   }
+.box5 { border-color: lightseagreen;   }
+.box6 { border-color: lightseagreen;   }
